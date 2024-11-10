@@ -1,0 +1,13 @@
+
+<odoo>
+    <record id="view_mrp_production_form_inherit_serial" model="ir.ui.view">
+        <field name="name">mrp.production.form.inherit.serial</field>
+        <field name="model">mrp.production</field>
+        <field name="inherit_id" ref="mrp.mrp_production_form_view"/>
+        <field name="arch" type="xml">
+            <field name="product_id" position="after">
+                <field name="custom_serial_number" readonly="1"/>
+            </field>
+        </field>
+    </record>
+</odoo>
